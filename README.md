@@ -1,14 +1,11 @@
 # flow-alignment-thesis
-Python implementation of a flow cytometry alignment method developed for a master’s thesis.
 
-## Overview
-This repository implements a per-marker alignment strategy based on density-derived landmarks
-and monotone piecewise-linear transformations, with quantile-based fallback for selected markers.
+Python code developed as part of a master’s thesis on alignment of multi-tube flow cytometry data.
 
-## Structure
-- `src/norm_functions.py`: core landmark extraction and alignment utilities
-- `run_alignment.py`: main script used to run the alignment pipeline
+The repository contains the implementation of a per-marker alignment strategy based on
+density-derived landmarks and monotone piecewise-linear transformations, with a quantile-based
+fallback for selected markers.
 
-## Usage
-```bash
-python run_alignment.py --raw-dir <path> --ref-path <path> --out-dir <path>
+## Files
+- `src/norm_functions.py`: landmark extraction and alignment functions  
+- `run_alignment.py`: script used to run the alignment pipeline
